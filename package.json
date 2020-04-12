@@ -1,6 +1,6 @@
 {
   "name": "robofriends",
-  "homepage": "ssh://yoavbenzvi.github.io/robofriends",
+  "homepage": "https://github.com/Yoavbenzvi/Robofriends/tree/gh-pages",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
