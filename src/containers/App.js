@@ -14,11 +14,9 @@ const mapStateToProps = (state) => ({
    error: state.requestRobots.error
 })
 
-const mapDispatchToProps = (dispatch) => {
-   return {
-      onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
-      onRequestRobots: () => dispatch(requestRobots())
-   }
+const mapDispatchToProps = {
+   onSearchChange: (event) => setSearchField(event.target.value),
+   onRequestRobots: () => requestRobots()
 }
 
 class App extends Component {
