@@ -8,6 +8,7 @@ import thunkMiddleware from 'redux-thunk';
 import './index.css';
 import 'tachyons';
 import App from './containers/App';
+import registerServiceWorker from './registerServiceWorker';
 
 const rootReducer = combineReducers({
 	searchRobots,
@@ -20,4 +21,7 @@ ReactDOM.render(
 	<Provider store={store}>
 		<App />
 	</Provider>,
-	document.getElementById('root'));
+	document.getElementById('root')
+);
+
+registerServiceWorker();
